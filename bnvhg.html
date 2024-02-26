@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+vandana
+</title>
+<link rel="stylesheet" type="text/css" href="van.css">
+</head>
+<body>
+	<div class="container">
+		<p>enter your text or url</p>
+		<input type="text" placeholder="text or url" id="qrText">
+		<div id="imgBox">
+			<img src="" id="qrimage">
+			
+		</div>
+		<button onclick="generate()">generate QR code</button>
+
+	</div>
+	<script type="text/javascript">
+		var imgBox=document.getElementById("imgBox");
+		var qrimage=document.getElementById("qrimage");
+		var qrText=document.getElementById("qrText");
+
+		function generate() {
+			// body...
+			//qrimage.src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data" + qrText.value;
+			qrimage.src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+		}
+
+	</script>
+</body>
+</html>
